@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: ./docker/app/Dockerfile
     volumes:
-      - ./src/:/go/src
+      - ./src:/go/src/github.com/nao-18/golang-backend-api
     tty: true
     depends_on:
       - postgres

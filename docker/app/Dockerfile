@@ -1,6 +1,6 @@
 FROM golang:1.16-alpine
 
-WORKDIR /go/src
+WORKDIR /go/src/github.com/nao-18/golang-backend-api
 COPY ./src .
 
 RUN apk upgrade --update && \
