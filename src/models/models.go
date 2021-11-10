@@ -28,7 +28,6 @@ type MovieGenre struct {
 	MovieID   int       `json:"movie_id"`
 	GenreID   int       `json:"genre_id"`
 	GenreName string    `json:"genre_name"`
-	GenreName string    `json:"genre_name"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
