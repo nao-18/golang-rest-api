@@ -1,4 +1,4 @@
-# dockerによるgolang開発環境(air含む)
+# golang-rest-api
 
 ## ビルドコマンド
 ~~~bash
