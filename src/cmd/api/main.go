@@ -40,7 +40,7 @@ func main() {
 	var cfg config
 	flag.IntVar(&cfg.port, "port", 9000, "Server port to listen on")
 	flag.StringVar(&cfg.env, "env", "development", "Application enviroment (development|production)")
-	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://postgres@localhost/restapi_db?sslmode=disable", "Postgres connection string")
+	flag.StringVar(&cfg.db.dsn, "dsn", "host=postgres port=5432 user=postgres password=postgres dbname=restapi_db sslmode=disable", "Postgres connection string")
 	flag.Parse()
 
 	logger := log.New(os.Stdout, "", log.Ldate|log.Ltime)
