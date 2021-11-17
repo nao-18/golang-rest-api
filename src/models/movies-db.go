@@ -170,4 +170,5 @@ func (m *DBModel) GenresAll() ([]*Genre, error) {
 		genres = append(genres, &g)
 	}
 
+	return genres, nil
 }
